@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E838F481E803C6200C030B7 /* all_month.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9E838F471E803C6200C030B7 /* all_month.geojson */; };
+		9EB519701E771AEF00E066A4 /* EarthQuake+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB5196E1E771AEF00E066A4 /* EarthQuake+CoreDataClass.swift */; };
+		9EB519711E771AEF00E066A4 /* EarthQuake+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB5196F1E771AEF00E066A4 /* EarthQuake+CoreDataProperties.swift */; };
+		9EB519731E78525300E066A4 /* QuakeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB519721E78525300E066A4 /* QuakeManager.swift */; };
 		9ECDEA161E76C15900C390DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDEA151E76C15900C390DF /* AppDelegate.swift */; };
 		9ECDEA181E76C15900C390DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDEA171E76C15900C390DF /* ViewController.swift */; };
 		9ECDEA1B1E76C15900C390DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECDEA191E76C15900C390DF /* Main.storyboard */; };
@@ -15,6 +19,7 @@
 		9ECDEA231E76C15900C390DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECDEA211E76C15900C390DF /* LaunchScreen.storyboard */; };
 		9ECDEA2E1E76C15A00C390DF /* MultiThreadedCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDEA2D1E76C15A00C390DF /* MultiThreadedCoreDataTests.swift */; };
 		9ECDEA391E76C15A00C390DF /* MultiThreadedCoreDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDEA381E76C15A00C390DF /* MultiThreadedCoreDataUITests.swift */; };
+		9ECDEA501E76C50200C390DF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECDEA4F1E76C50200C390DF /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E838F471E803C6200C030B7 /* all_month.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = all_month.geojson; sourceTree = "<group>"; };
+		9EB5196E1E771AEF00E066A4 /* EarthQuake+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "EarthQuake+CoreDataClass.swift"; path = "DatabaseManager/EarthQuake+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9EB5196F1E771AEF00E066A4 /* EarthQuake+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "EarthQuake+CoreDataProperties.swift"; path = "DatabaseManager/EarthQuake+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9EB519721E78525300E066A4 /* QuakeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuakeManager.swift; sourceTree = "<group>"; };
 		9ECDEA121E76C15900C390DF /* MultiThreadedCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiThreadedCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECDEA151E76C15900C390DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ECDEA171E76C15900C390DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		9ECDEA341E76C15A00C390DF /* MultiThreadedCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiThreadedCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECDEA381E76C15A00C390DF /* MultiThreadedCoreDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiThreadedCoreDataUITests.swift; sourceTree = "<group>"; };
 		9ECDEA3A1E76C15A00C390DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ECDEA4F1E76C50200C390DF /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = DatabaseManager/CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,13 @@
 		9ECDEA141E76C15900C390DF /* MultiThreadedCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				9ECDEA4E1E76C33C00C390DF /* DatabaseManager */,
 				9ECDEA151E76C15900C390DF /* AppDelegate.swift */,
+				9EB519721E78525300E066A4 /* QuakeManager.swift */,
 				9ECDEA171E76C15900C390DF /* ViewController.swift */,
 				9ECDEA191E76C15900C390DF /* Main.storyboard */,
 				9ECDEA1F1E76C15900C390DF /* Assets.xcassets */,
+				9E838F471E803C6200C030B7 /* all_month.geojson */,
 				9ECDEA211E76C15900C390DF /* LaunchScreen.storyboard */,
 				9ECDEA241E76C15900C390DF /* Info.plist */,
 				9ECDEA1C1E76C15900C390DF /* MultiThreadedCoreData.xcdatamodeld */,
@@ -126,6 +139,16 @@
 				9ECDEA3A1E76C15A00C390DF /* Info.plist */,
 			);
 			path = MultiThreadedCoreDataUITests;
+			sourceTree = "<group>";
+		};
+		9ECDEA4E1E76C33C00C390DF /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				9EB5196E1E771AEF00E066A4 /* EarthQuake+CoreDataClass.swift */,
+				9EB5196F1E771AEF00E066A4 /* EarthQuake+CoreDataProperties.swift */,
+				9ECDEA4F1E76C50200C390DF /* CoreDataStack.swift */,
+			);
+			name = DatabaseManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +260,7 @@
 			files = (
 				9ECDEA231E76C15900C390DF /* LaunchScreen.storyboard in Resources */,
 				9ECDEA201E76C15900C390DF /* Assets.xcassets in Resources */,
+				9E838F481E803C6200C030B7 /* all_month.geojson in Resources */,
 				9ECDEA1B1E76C15900C390DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ECDEA1E1E76C15900C390DF /* MultiThreadedCoreData.xcdatamodeld in Sources */,
+				9EB519701E771AEF00E066A4 /* EarthQuake+CoreDataClass.swift in Sources */,
+				9EB519711E771AEF00E066A4 /* EarthQuake+CoreDataProperties.swift in Sources */,
+				9ECDEA501E76C50200C390DF /* CoreDataStack.swift in Sources */,
 				9ECDEA181E76C15900C390DF /* ViewController.swift in Sources */,
+				9EB519731E78525300E066A4 /* QuakeManager.swift in Sources */,
 				9ECDEA161E76C15900C390DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiThreadedCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.myself.MultiThreadedCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiThreadedCoreData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.myself.MultiThreadedCoreData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +539,7 @@
 				9ECDEA3F1E76C15A00C390DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9ECDEA401E76C15A00C390DF /* Build configuration list for PBXNativeTarget "MultiThreadedCoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +548,7 @@
 				9ECDEA421E76C15A00C390DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9ECDEA431E76C15A00C390DF /* Build configuration list for PBXNativeTarget "MultiThreadedCoreDataUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +557,7 @@
 				9ECDEA451E76C15A00C390DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
