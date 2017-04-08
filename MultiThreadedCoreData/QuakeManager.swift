@@ -21,7 +21,7 @@ class QuakeManager : NSObject {
     
     dynamic var earthQuake:[EarthQuake] = [EarthQuake]()
     dynamic var isSavingFinish = false
-    private var size = 20
+    private var size = 200
     private var fetchOffsetCount = 0
     
     
